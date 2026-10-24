@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Podemos volver a intentar?</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 90%;
+      width: 350px;
+    }
+    h1 {
+      color: #e63946;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #4a5568;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .btn-group {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+    .btn-yes {
+      background-color: #e63946;
+      color: white;
+      font-weight: bold;
+    }
+    .btn-yes:hover {
+      transform: scale(1.05);
+      background-color: #d62828;
+    }
+    #response {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #2a9d8f;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🍫 Un detalle para ti</h1>
+    <p>Sé que hemos tenido discusiones y vario problema, pero eres muy especial para mí y quisiera que estemos bien.</p>
+    <p><strong>¿Puedo ser tu novio otra vez? ❤️</strong></p>
+
+    <div class="btn-group">
+      <button class="btn-yes" onclick="aceptar()">¡Sí, acepto!</button>
+    </div>
+
+    <div id="response">¡Te amo prechus, ya no vale separarse! 💖</div>
+  </div>
+
+  <script>
+    function aceptar() {
+      document.getElementById('response').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
